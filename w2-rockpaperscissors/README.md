@@ -14,18 +14,6 @@ Make a rock paper scissors game using javascript that runs in the browser. Use `
 - Paper beats rock
 - Scissors beat paper
 
-## Using Git
-*Make sure to commit often!* 
-
-- Save work. 
-- In terminal run the following commands
-```
-git add .
-git commit -m "add a message"
-git push
-```
-- Do a final push by Tuesday night.
-
 ## Getting Help
 Stuck? Try the psuedo code below to get you started. Consider phoning (or slacking!) a friend. I'll make myself available as much as possible, reach out to me on slack. 
 
