@@ -28,17 +28,25 @@ alert("You want " + number1 + operation + number2 + "!");
 
 var answer; 
 
-if(operation == "+")
+if(operation == "+"){
   console.log(answer = number1 + number2);
-else if(operation == "-")
+}
+else if(operation == "-"){
   console.log(answer = number1 - number2);
-else if(operation == "*")
+}
+else if(operation == "*"){
   console.log(answer = number1 * number2);
-else if(operation == "/")
+}
+else if(operation == "/"){
   console.log(answer = number1 / number2);
   var remainder;
   console.log(remainder = "Remainder " + (number1 % number2));
-
-var exponentAnswer = 1;
-  for(i =1; i <= number2; i++)
+}
+else {
+  exponentAnswer = 1;
+  for(i =1; i <= number2; i++){
     console.log(exponentAnswer = exponentAnswer * number1);
+    //another way is:
+    //Math.pow(number1, number2);
+  }
+}
