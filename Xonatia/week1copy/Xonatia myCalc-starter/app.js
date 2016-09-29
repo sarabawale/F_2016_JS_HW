@@ -1,20 +1,15 @@
 console.log('yar! js working.')
 
 // Your code here!
-//There are a ton of bugs in my code
-//there is always an error when I write the else statement so I 
-//created a for loop outside of the if statement, which causes another 
-//bug, which returns  all the other answers for each operation 
-//I completed the remainder and exponent, but I tried the edge casing 
-//but had a little difficulty. I commented them out. 
+//I had trouble with the edge casing for strings so I commented them out. 
 
-var number1 = prompt("Choose any number!"); 
+var number1 = parseInt(prompt("Choose any number!")); 
 alert("Your number is " + number1);
 //if (isNaN(number1)) 
     //alert("Must input numbers");
     //prompt("Choose your first number!");
 
-var number2 = prompt("Choose another number!");
+var number2 = parseInt(prompt("Choose another number!"));
 alert("Your second number is " + number2);
 //if (isNaN(number2)) 
     //alert("Must input numbers");
@@ -22,6 +17,7 @@ alert("Your second number is " + number2);
  
 var operation = prompt("Choose an operation, such as: * , /, + , - , or ^ to calculate the exponent")
 alert("You want " + number1 + operation + number2 + "!"); 
+//couldn't figure out how to put an end casing for a string
 //if (isNaN(operation.includes())) 
     //alert("Must input strings");
     //prompt("Choose any operation!");
