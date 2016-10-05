@@ -3,6 +3,7 @@ console.log('yo js works');
 //put your code here
 
 
+var ask = confrim('Do you want to play Rock, Paper, Scissors?'); 
 
 var userplayer = prompt('Chose either Rock, Paper, or Scissors?')
 
@@ -18,29 +19,74 @@ else if (computerplayer >.64)
 	{computerplayer = "scissor";}
 
 else{
-	return ('error')
+	alert('error')
+}
+
+
+var countdown = 5;
+
+while(countdown >= 1){
+	document.write(countdown);
+	countdown--; 
 }
 
 
 
-rock || paper || scissor
+if 
+	(computerplayer == userplayer){
+		alert('its a tie!')
 
+	}
 
+else if 
+	(computerplayer == rock && userplayer == paper);
 
-var userscore = 0; 
-var compscore = 0; 
+	{
+		return('User wins!')
+	}
 
+else if 
+	(computerplayer == rock && userplayer == scissor);
 
-var rockscore = 0;
-
-var paperscore = 0;
-
-var scissorscore = 0;  
-
-
-while(playing){
-  document.write('keep playing!'); 
-  playing = confirm ('Do you want to play again?')
-  console.log(playing); 
+{
+	return('Computer wins!')
 }
+
+
+else if 
+	(computerplayer == paper && userplayer == rock)
+
+{
+	return('Computer wins!')
+}
+
+else if 
+	(computerplayer == paper && userplayer == scissor)
+
+{
+	return('User wins!')
+}
+
+else if 
+	(computerplayer == scissor && userplayer == paper)
+
+{
+	return('Computer wins!')
+}
+
+else if 
+	(computerplayer == scissor && userplayer == rock)
+{
+	return('User wins!')
+}
+
+
+
+
+
+
+
+
+
+
 
