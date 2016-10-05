@@ -3,9 +3,13 @@ console.log('yo js works');
 //put your code here
 
 
-var ask = confrim('Do you want to play Rock, Paper, Scissors?'); 
+
+var ask = Prompt('Do you want to play Rock, Paper, Scissors? Enter True or False'); 
 
 var userplayer = prompt('Chose either Rock, Paper, or Scissors?')
+
+var userscore = 0; 
+var computerscore = 0; 
 
 var computerplayer = math.random();
 
@@ -23,14 +27,6 @@ else{
 }
 
 
-var countdown = 5;
-
-while(countdown >= 1){
-	document.write(countdown);
-	countdown--; 
-}
-
-
 
 if 
 	(computerplayer == userplayer){
@@ -42,46 +38,54 @@ else if
 	(computerplayer == rock && userplayer == paper);
 
 	{
-		return('User wins!')
+		alertalert('User wins!'); 
+		userscore = ++
 	}
 
 else if 
 	(computerplayer == rock && userplayer == scissor);
 
 {
-	return('Computer wins!')
+	alertalert('Computer wins!'); 
+	computerscore = ++
 }
 
 
 else if 
-	(computerplayer == paper && userplayer == rock)
+	(computerplayer == paper && userplayer == rock);
 
 {
-	return('Computer wins!')
+	alertalert('Computer wins!');
+	computerscore = ++
 }
 
 else if 
-	(computerplayer == paper && userplayer == scissor)
+	(computerplayer == paper && userplayer == scissor); 
 
 {
-	return('User wins!')
+	alert('User wins!'); 
+	userscore = ++
 }
 
 else if 
-	(computerplayer == scissor && userplayer == paper)
+	(computerplayer == scissor && userplayer == paper);
 
 {
-	return('Computer wins!')
+	alert('Computer wins!');
+	computerscore = ++
 }
 
 else if 
-	(computerplayer == scissor && userplayer == rock)
+	(computerplayer == scissor && userplayer == rock);
 {
-	return('User wins!')
+	alert('User wins!');
+	userscore = ++
 }
 
 
-
+ 
+   if ask = False;  
+    alert("Thanks for playing. You're score is ("userscore"));
 
 
 
