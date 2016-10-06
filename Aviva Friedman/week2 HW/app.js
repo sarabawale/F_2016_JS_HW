@@ -53,6 +53,7 @@ if (computerplayer == 2);
 
 
 
+
 if 
 	(computerplayer == userplayer){
 		alert('its a tie!')
@@ -63,16 +64,16 @@ else if
 	(computerplayer == rock && userplayer == paper);
 
 	{
-		alertalert('User wins!'); 
-		userscore = ++
+		alert('User wins!'); 
+		userscore++
 	}
 
 else if 
 	(computerplayer == rock && userplayer == scissor);
 
 {
-	alertalert('Computer wins!'); 
-	computerscore = ++
+	alert('Computer wins!'); 
+	computerscore++
 }
 
 
@@ -80,8 +81,8 @@ else if
 	(computerplayer == paper && userplayer == rock);
 
 {
-	alertalert('Computer wins!');
-	computerscore = ++
+	alert('Computer wins!');
+	computerscore++
 }
 
 else if 
@@ -89,7 +90,7 @@ else if
 
 {
 	alert('User wins!'); 
-	userscore = ++
+	userscore++
 }
 
 else if 
@@ -97,15 +98,16 @@ else if
 
 {
 	alert('Computer wins!');
-	computerscore = ++
+	computerscore++
 }
 
 else if 
 	(computerplayer == scissor && userplayer == rock);
 {
 	alert('User wins!');
-	userscore = ++
+	userscore++
 }
+
 
 
 
