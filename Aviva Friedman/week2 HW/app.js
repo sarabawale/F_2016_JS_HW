@@ -2,54 +2,43 @@ console.log('yo js works');
 
 //put your code here
 
-
-var ask = confirm('Do you want to play Rock, Paper, Scissors?');  
-if (ask =true){
-	alert ('start playing!');
-}
- else {
- 	alert ("thanks for playing! You're score is "userscore"")
-
- }
-
-
 var userscore = 0; 
 var computerscore = 0; 
 
 
-var choices = {'rock', 'paper', 'scissos'};
-choices.sort (function) math.random(); 
+var ask = confirm('Do you want to play Rock, Paper, Scissors?');  
+if (ask == true){
+	alert ('start playing!');
+}
+ else { 
+ 	alert ("thanks for playing! You're score is ("+  userscore + ")");
 
-if (computerplayer == 0); 
-{computerplayer == "rock";}
-
-
-if (computerplayer == 1); 
-{computerplayer == "paper";}
-
-
-if (computerplayer == 2); 
-{computerplayer == "scissor";}
+ }
 
 
+var computerplayer;
 
-// another way to do choices
+var decimal = Math.random()*3;
+console.log(decimal);
+var random = Math.floor(decimal);
+console.log(random);
 
-// var computerplayer = math.random();
 
-// if (computerplayer < .35); 
-// {computerplayer = "rock";}
+if (random == 0); 
+{computerplayer = "rock";}
 
-// else if (computerplayer >.34 && <.65)
-// 	{computerplayer = "paper";}
 
-// else if (computerplayer >.64)
-// 	{computerplayer = "scissor";}
+if (random == 1); 
+{computerplayer = "paper";}
 
-// else{
-// 	alert('error')
-// }
 
+if (random == 2); 
+{computerplayer = "scissor";}
+
+console.log(computerplayer);
+
+
+var userplayer = prompt('Do you chose rock, paper, or scissors?')
 
 
 
@@ -60,16 +49,14 @@ if
 
 	}
 
-else if 
-	(computerplayer == rock && userplayer == paper);
+else if(computerplayer == 'rock' && userplayer == 'paper')
 
 	{
 		alert('User wins!'); 
 		userscore++
 	}
 
-else if 
-	(computerplayer == rock && userplayer == scissor);
+else if (computerplayer == 'rock' && userplayer == 'scissor')
 
 {
 	alert('Computer wins!'); 
@@ -78,7 +65,7 @@ else if
 
 
 else if 
-	(computerplayer == paper && userplayer == rock);
+	(computerplayer == 'paper' && userplayer == 'rock')
 
 {
 	alert('Computer wins!');
@@ -86,15 +73,15 @@ else if
 }
 
 else if 
-	(computerplayer == paper && userplayer == scissor); 
+	(computerplayer == 'paper' && userplayer == 'scissor') 
 
 {
 	alert('User wins!'); 
 	userscore++
 }
 
-else if 
-	(computerplayer == scissor && userplayer == paper);
+else if
+	(computerplayer == 'scissor' && userplayer == 'paper')
 
 {
 	alert('Computer wins!');
@@ -102,11 +89,16 @@ else if
 }
 
 else if 
-	(computerplayer == scissor && userplayer == rock);
+	(computerplayer == 'scissor' && userplayer == 'rock')
 {
 	alert('User wins!');
+
+
 	userscore++
 }
+
+
+
 
 
 
