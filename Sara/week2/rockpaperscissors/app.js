@@ -4,9 +4,9 @@ console.log('yo js works');
 var userScore = 0;
 var compScore = 0;
 var compArray = ["rock", "paper", "scissors"];
-var playing = confirm("Would you like to play rock, paper scissors?");
+var playing = prompt("Would you like to play rock, paper scissors? Type Y or N");
 
-while(playing){
+while(playing == "Y"){
   var userMove = prompt("Type rock, paper, or scissors.");
   var compMove = compArray[Math.floor(Math.random()*compArray.length)];
     
@@ -34,12 +34,7 @@ while(playing){
       }
     }
   
-  var again = confirm("The score is User: " + userScore + ", Computer: " + compScore + ". Play again?");
-  if(again){
-    playing = true;
-  } else{
-    playing = false;
-  }
+  playing = prompt("The score is User: " + userScore + ", Computer: " + compScore + ". Play again? Type Y or N");
 }
 
 alert("Final score: User " + userScore + ", Computer " + compScore);
