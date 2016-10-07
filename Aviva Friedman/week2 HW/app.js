@@ -8,7 +8,7 @@ if (ask =true){
 	alert ('start playing!');
 }
  else {
- 	alert ("thanks for playing! You're score is ("userscore")")
+ 	alert ("thanks for playing! You're score is "userscore"")
 
  }
 
@@ -49,8 +49,6 @@ if (computerplayer == 2);
 // else{
 // 	alert('error')
 // }
-
-
 
 
 
