@@ -1,54 +1,38 @@
 console.log("game.js is working");
 
+//Walked through/modified in Class 5 (10/20)
+
 function Game() {
-	this.guesses = 0;
+	this.guesses;
 	this.guessedLetters = []; //array of strings
-	this.words = []; //array of strings
-	this.currentWord = "";
+	this.currentWord = ""; //later becomes Word object
+	this.answer = "";
 
 	this.startGame = function(wordsArray){ //wordsArray is array of strings
-		guesses = 10;
-		guessedLetters = []; //reset guessedLetters
-		words = []; //reset words
+		this.guesses = 10;
 
-		//Selects random word from wordsArray
-		var randLoc = Math.floor((Math.random() * wordsArray.length-1) + 1);
-		var rand = new Word(wordsArray[randLoc]);
-		currentWord = rand;
+		//selects random word from wordsArray
+		var ranNum = Math.floor(Math.random() * wordsArray.length);
+		var ranWord = wordsArray[ranNum];
 
-		for(var i=0; i<wordsArray.length; i++){
-			words.push(wordsArray[i]);
-		}
+		this.currentWord = new Word();
+		this.currentWord.getLetters(ranWord);
+		this.answer = ranWord;
 
-	}
-
-	this.wordArray = function(){
-		var loc = Math.floor((Math.random() * words.length-1) + 1);
-		currentWord = new Word(words[loc]);
-		currentWord.getLetters(currentWord.letters);
+		this.guessedLetters = []; //resets guessedLetters
 	}
 
 	this.guess = function(letter){
-		var match = false;
-		if(guessedLetters.indexOf(letter) >= 0){
-			var resp = prompt("You've already guessed that letter. Try another:");
-			letter = resp;
-		} else if (guessedLetters.indexOf(letter) < 0){
-			guessedLetters.push(letter);
-			var state = currentWord.try(letter);
-			if(state){
-				letter.show();
-				match = true;
-			} else{
-				match = false;
+		if(this.guessedLetters.indexOf(letter) == -1){ //has the letter been guessed yet?
+			if(this.currentWord.try(letter) == false){
+				this.guesses--;
+				this.guessedLetters.push(letter);
 			}
 		}
-
-		return match;
 	}
 
 	this.isOver = function(){
-		if(guesses == 0 || currentWord.isFound()){
+		if(this.guesses == 0 || this.currentWord.isFound()){
 			return true;
 		} else{
 			return false;
@@ -56,9 +40,9 @@ function Game() {
 	}
 
 	this.overMessage = function(){
-		if(currentWord.isFound()){
+		if(this.currentWord.isFound() && this.guesses > 0){
 			return "You win!";
-		} else if(guesses == 0){
+		} else if(this.guesses == 0){
 			return "You lose.";
 		} else if(!this.isOver()){
 			return "";
@@ -66,6 +50,8 @@ function Game() {
 	}
 
 	this.render = function(){
-		return currentWord.render() + " with " + guesses + " left.";
+		return this.currentWord.render() + "\n" +
+		this.guesses + " guesses left." + "\n"
+		+ "Guessed letters: " + this.guessedLetters;
 	}
 }

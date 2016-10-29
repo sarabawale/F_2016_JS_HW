@@ -1,5 +1,7 @@
 console.log("main.js working");
 
+//Walked through/modified in Class 5 (10/20)
+
 var testWords = ["acres", "adult", "advice", "arrangement", "attempt", "August", "autumn", "border", "breeze", "brick", 
 			 "calm", "canal", "casey", "cast", "chose", "claws", "coach", "constantly", "contrast", "cookies", "customs", 
 			 "damage", "danny", "deeply", "depth", "discussion", "doll", "donkey", 
@@ -17,28 +19,16 @@ var testWords = ["acres", "adult", "advice", "arrangement", "attempt", "August",
 
 
 var playHangman = function() {
-	var x = new Game();
+	var game = new Game();
+	game.startGame(testWords);
 
-	x.startGame(testWords);
-
-	while(!x.isOver()){
-		var response = prompt("This is the game so far: " + x.render() + " Please type in a letter to guess.");
-		x.guess(response);
-		if(x.guess(response) == true){
-
-		} else{
-			reponse = prompt("Sorry, that letter isn't in the word. Guess another:");
-		}
+	while(!game.isOver()){
+		alert(game.render());
+		var userGuess = prompt("Please type in a letter to guess.");
+		game.guess(userGuess);
 	}
 	
-	if(x.isOver()){
-		var replay = prompt("Game over. Would you like to play again? Type Y or N.");
-		if(replay == "Y"){
-			x.isOver() == false;
-		} else if(replay == "N"){
-			return x.overMessage();
-		}
-	}
+	alert(game.overMessage() + " The word was " + game.answer);
 }
 
 //Lets play hangman!

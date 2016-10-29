@@ -1,8 +1,10 @@
 console.log("letter.js is working");
 
+//Walked through/modified in Class 5 (10/20)
+
 function Letter(value) {
-	this.value = value;
-	this.hidden = false;
+	this.value = value; //string
+	this.hidden = true;
 
 	this.hide = function(){
 		this.hidden = true;
@@ -20,6 +22,3 @@ function Letter(value) {
 		}
 	}
 }
-
-
-var A = new Letter("a");
