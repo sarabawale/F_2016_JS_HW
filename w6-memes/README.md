@@ -3,7 +3,7 @@
 ## Directions
 ### memeMe
 + Write a function called memeMe!
-+ prompt the user a start line, 
++ prompt the user for a setup line for a joke, 
 + then prompt them again for a punch line
 + target the paragraph with a class of 'start'
 + change the text to what the user inputed for a starting line
