@@ -22,13 +22,13 @@ $(document).ready(function(){
 	$('li:contains("Teach Class")').addClass('current');
 
 	//ITERATORS
-	//explicit iteration, basically a for loop to go over the list
-	// $("li").each(function(){ //function() is an anonymous callback function
-	// 	$(this).addClass("done"); //this accesses the current item
-	// });
+	explicit iteration, basically a for loop to go over the list
+	$("li").each(function(){ //function() is an anonymous callback function
+		$(this).addClass("done"); //this accesses the current item
+	});
 
-	//implicit iteration, since li is an array, it will automatically iterate over the array
-	//$("li").addClass("done");
+	implicit iteration, since li is an array, it will automatically iterate over the array
+	$("li").addClass("done");
 
 	//add event listener
 	$("li").click(function(){ //listens for clicks
