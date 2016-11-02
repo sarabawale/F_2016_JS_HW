@@ -26,22 +26,15 @@ $(document).ready(function(){
 		addLike();
 	});
 
+	$(".new").click(function(){
+		var arr = ["https://imgflip.com/s/meme/One-Does-Not-Simply.jpg", "https://imgflip.com/s/meme/Y-U-No.jpg", "http://www.relatably.com/m/img/funny-blank-memes/Confused-Baby-Meme-Blank-07.jpg", "https://imgflip.com/s/meme/Hipster-Ariel.jpg", "https://s-media-cache-ak0.pinimg.com/236x/34/3f/06/343f061e25ba86b98bf6c983130d2783.jpg", "https://i.imgflip.com/cgp1b.jpg"];
+		var ran = Math.floor((Math.random() * arr.length));
+		$(".start").text("");
+		$(".punch").text("");
+		$(".image").css("background-image", "url(" + arr[ran] + ")");
+	});
+
 });
-
-// BONUS!
-// Create a new button
-// If this button is pressed
-  // clear the text
-  // change the image to a new meme image
-  // hint: the image is a background image to the .image class
-  // Use the .css function to change it.
-
-// SUPER BONUS!
-// Create an an array of meme urls!
-// When the new button is pressed, randomly select a meme image from the array!
-
-// need help finding meme worthy images? 
-// there are a ton of examples at https://memegenerator.net
 
 
 
