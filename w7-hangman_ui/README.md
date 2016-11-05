@@ -1,4 +1,3 @@
-[Console Hangman](https://classroom.github.com/assignment-invitations/41cb3d432536a53850d98004b3395bf7)
 
 After you get hangman working in the console. Add some sweet DOM manipulation so a user can interact with your program without the conosle or prompts/alerts/etc.
 
