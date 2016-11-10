@@ -1,0 +1,61 @@
+body{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	background: #95DDBB;
+	color: #03242F;
+}
+
+button{
+	font-family: inherit;
+    font-size: inherit;
+    padding: 1em;
+    color: white;
+    border: 1px solid #832511;
+    background: #A94629;
+}
+
+button:hover{
+	background: white;
+	color: #A94629;
+}
+
+input[type=text]{
+	color: #03242F;
+	opacity: 0.6;
+}
+
+h1{
+	text-align: center;
+    padding: 1em;
+    text-shadow: 0px 2px white;
+    text-transform: uppercase;
+}
+
+.start{
+	display: block;
+	margin: auto;
+}
+
+.in{
+	margin-right: 15px;
+	width: 48px;
+    height: 48px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.guess{
+	margin: auto;
+}
+
+.input{
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+.gameboard{
+	text-align: center;
+	margin: 5em;
+}
