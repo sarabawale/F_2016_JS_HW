@@ -55,9 +55,6 @@ should fill the words array with the words from
 	}
 
 	this.render = function(){
-		return this.currentWord.render() + 
-		'\n' 
-		+ this.guesses + ' guesses left ' + '\n' 
-		+ 'Guess Letters: ' + this.guessedLetters;
+		return this.currentWord.render(); 
 	}
 }
